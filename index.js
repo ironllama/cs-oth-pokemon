@@ -36,9 +36,9 @@ function animate() {
     npc1.randomMove();
     npc2.randomMove();
     npc3.randomMove();
-    npc1.draw(camera);
-    npc2.draw(camera);
-    npc3.draw(camera);
+    npc1.draw();
+    npc2.draw();
+    npc3.draw();
 
     if (lastKey != "") {
         if (lastKey == keys.UP) {
@@ -53,13 +53,13 @@ function animate() {
 
         player.animate();
     }
-    player.draw(camera);
+    player.draw();
 
-    foreground.draw(camera);
+    foreground.draw();
 
     // For debugging.
-    // background.drawBoundaries(camera);
-    // player.drawBorder(camera);
+    // background.drawBoundaries();
+    // player.drawBorder();
 }
 
 
